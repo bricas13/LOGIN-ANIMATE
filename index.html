@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>LOGIN ANIMATION1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box signin">
+        <h2>Alredy hahe an Account</h2>
+        <button class="signinBtn">Sign in</button>
+      </div>
+      <div class="box signup">
+        <h2>Dont have an Acount</h2>
+        <button class="sigupBtn">signup</button>
+      </div>
+      <div class="formBx">
+        <div class="form signinform">
+          <form action="">
+            <h3>Sig In</h3>
+            <input type="text" name="" id="" placeholder="Username" />
+            <input type="text" name="" id="" placeholder="Password" />
+            <input type="submit" value="Login" />
+            <a href="#" class="forgot">Forgot Password</a>
+          </form>
+        </div>
+        <div class="form sigupform">
+          <form action="">
+            <h3>Sig UP</h3>
+            <input type="text" name="" id="" placeholder="Username" />
+            <input type="text" name="" id="" placeholder="Email" />
+            <input type="text" placeholder="Password" />
+            <input type="text" placeholder="Confirm" />
+            <input type="submit" value="Register" />
+            <a href="#" class="forgot">Forgot Password</a>
+          </form>
+        </div>
+      </div>
+
+      <script>
+        let signinBtn = document.querySelector(".signinBtn");
+        let sigupBtn = document.querySelector(".sigupBtn");
+
+        let body = document.querySelector("body");
+
+        sigupBtn.onclick = function () {
+          body.classList.add("slide");
+        };
+        signinBtn.onclick = function () {
+          body.classList.remove("slide");
+        };
+      </script>
+    </div>
+  </body>
+</html>
